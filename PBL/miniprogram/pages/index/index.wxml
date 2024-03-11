@@ -1,0 +1,13 @@
+<view class="background-container">
+  <view class="container">
+    <!-- 学生入口 -->
+    <navigator url="/pages/student-login/student-login" class="entry">
+      <text class="entry-text">学生入口</text>
+    </navigator>
+
+    <!-- 老师入口 -->
+    <navigator url="/pages/teacher-login/teacher-login" class="entry">
+      <text class="entry-text">老师入口</text>
+    </navigator>
+  </view>
+</view>

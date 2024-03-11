@@ -1,0 +1,22 @@
+<view class="questionnaire-container">
+  <view wx:for="{{questions}}" wx:for-index="index1" wx:for-item="title">
+    <!-- 问题标题 -->
+    <van-cell-group inset>
+    <van-cell title="{{index1+1}}:{{title}}" size="large"></van-cell>
+      <block wx:if="{{type[index1]=='option'}}">
+        <van-radio-group bind:change="onChange" data-index1="{{index1}}">
+          <van-radio name="非常符合">非常符合</van-radio>
+          <van-radio name="比较符合">比较符合</van-radio>
+          <van-radio name="中立">中立</van-radio>
+          <van-radio name="不符合">不符合</van-radio>
+        </van-radio-group>
+      </block>
+      <block wx:else>
+        <textarea placeholder="请输入" bindinput="onTextareaInput" data-index1="{{index1}}"></textarea>
+      </block>
+    </van-cell-group>
+  </view>
+  <van-button type="info" bind:tap="submitForm">
+    提交问卷
+  </van-button>
+</view>

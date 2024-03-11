@@ -1,0 +1,30 @@
+<van-notice-bar
+  color="#1989fa"
+  background="#ecf9ff"
+  left-icon="volume-o"
+  scrollable
+  text="在分组时请确认组数和对应案例教师数量一致以及请勿重复分组或者在案例进行中分组"
+/>
+  <view>
+  <van-field
+    name="number"
+    label="输入组数"
+    type="number"
+    value="{{inputNumber}}"
+    bind:input="onInput"
+  />
+  <van-button type="primary" size="large" bind:tap="onConfirm">确认</van-button>
+  <view>
+
+  <view wx:for="{{groupedStudents}}" wx:for-index="groupNumber" wx:for-item="group">
+    <view>
+      <van-cell title="Group {{groupNumber}}"></van-cell>
+      <view wx:for="{{group}}" wx:for-item="student">
+      <van-cell-group inset>
+        <van-cell title="{{student.name}}" value="{{student.number}}" />
+      </van-cell-group>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

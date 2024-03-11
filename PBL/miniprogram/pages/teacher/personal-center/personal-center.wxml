@@ -1,0 +1,33 @@
+<view class="profile-container">
+  <van-cell-group inset>
+    <van-cell size="large" title="姓名" value="{{ name }}" />
+    <van-cell title="工号" value="{{ number }}" />
+
+  </van-cell-group>
+  
+</view>
+<view>
+<van-cell-group inset>
+  <van-cell title="修改密码" value="点击跳转" clickalbe bindtap="goToChangePassword" />
+</van-cell-group>
+</view>
+<view>
+  <van-cell-group inset>
+    <van-cell title="随机分组" value="点击跳转" clickalbe bindtap="goToRandomGroup" />
+  </van-cell-group>
+</view>
+<view>
+  <van-cell-group inset>
+    <van-cell title="计算分数" value="点击跳转" clickalbe bindtap="goToCompute" />
+  </van-cell-group>
+</view>
+<view>
+  <van-cell-group inset>
+    <van-cell title="更换当前正在进行的案例" value="点击跳转" clickalbe bindtap="goToChooseCase" />
+  </van-cell-group>
+</view>
+
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+  <van-tabbar-item icon="setting-o">设置</van-tabbar-item>
+</van-tabbar>

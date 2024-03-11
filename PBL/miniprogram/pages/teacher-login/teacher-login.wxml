@@ -1,0 +1,24 @@
+<view class="login-container">
+  <view class="input-container">
+    <van-field
+    model:value="{{ number }}"
+      bind:onChange="onNumberInput"
+      label="工号"
+      placeholder="请输入工号"
+      clearable
+      required
+      error-message="{{ errorMessage.number }}"
+    />
+    <van-field
+    model:value="{{ password }}"
+      bind:onChange="onPasswordInput"
+      label="密码"
+      type="password"
+      placeholder="请输入密码"
+      clearable
+      required
+      error-message="{{ errorMessage.password}}"
+    />
+  </view>
+  <van-button type="primary" bind:tap="studentLogin" class="login-button">登录</van-button>
+</view>

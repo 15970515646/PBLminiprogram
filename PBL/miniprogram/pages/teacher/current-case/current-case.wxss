@@ -1,0 +1,28 @@
+.content-section {
+  font-size: 14px; /* 内容区域的字体大小 */
+}
+
+.panel-content {
+  font-size:30px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.content-section {
+  flex: 1;
+  padding: 30rpx;
+}
+
+.button-section {
+  margin-top: 30rpx;
+  text-align: center;
+}
+
+.cell-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+}

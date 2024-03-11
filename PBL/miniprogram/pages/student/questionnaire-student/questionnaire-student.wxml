@@ -1,0 +1,20 @@
+<view class="questionnaire-container">
+  <view wx:for="{{questions}}" wx:for-index="index1"  wx:for-item="title">
+    <!-- 问题标题 -->
+    <van-cell title="{{index1+1}}:{{title}}" size="large" ></van-cell>
+
+    <!-- 学生列表 -->
+    <van-cell-group inset>
+      <view wx:for="{{students}}" wx:for-index="index2">
+        <van-cell title="{{item.name}}"  use-label-slot>
+          <view slot="label">
+            <van-rate value="0" count="{{max_mark[index1]}}" size="20" bind:change="onRateChange" data-index1="{{index1}}" data-index2="{{index2}}" />
+          </view>
+        </van-cell>
+      </view>
+    </van-cell-group>
+  </view>
+  <van-button type="info" bind:tap="submitForm">
+    提交问卷
+  </van-button>
+</view>

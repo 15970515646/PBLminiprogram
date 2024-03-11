@@ -1,0 +1,15 @@
+/* pages/teacher/index/index.wxss */
+
+.button, .btn {
+  background-color: yellow;
+  width: 150px;
+  margin-top: 200px;
+}
+
+.btn {
+  background-color: pink;
+}
+.filename {
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,16 @@
+<view class="profile-container">
+  <van-cell-group>
+    <van-cell  size="large" title="姓名" value="{{ name }}" />
+    <van-cell title="学号" value="{{ number }}" />
+    <van-cell title="组号" value="{{ group }}" />
+  </van-cell-group>
+
+  <!-- 修改密码入口 -->
+  <view class="change-password">
+    <van-button size="large" type="primary" bindtap="goToChangePassword">修改密码</van-button>
+  </view>
+</view>
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o"  >首页</van-tabbar-item>
+  <van-tabbar-item icon="setting-o" >设置</van-tabbar-item>
+</van-tabbar>

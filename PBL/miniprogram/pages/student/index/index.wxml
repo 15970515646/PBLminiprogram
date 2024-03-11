@@ -1,0 +1,62 @@
+
+<!-- 循环遍历案例数组生成对应的 van-panel -->
+<block wx:for="{{cases}}" wx:key="index">
+  <van-panel title="{{item.title}}" desc="{{item.number}}"  show="{{item.showPanel}}" bind:close="onClosePanel" wx:style="height: 400rpx;">
+  <view class="panel-content">
+    <!-- 内容区域 -->
+    <view class="content-section">
+      {{item.desc}}
+    </view>
+
+    <!-- 按钮区域 -->
+    <view class="button-section">
+      <van-button type="primary" size="normal" bind:tap="onShowPopupFromPanel" data-index="{{index}}">点击填写</van-button>
+    </view>
+  </view>
+</van-panel>
+  <van-divider />
+</block>
+
+<!-- Popup组件 -->
+<van-popup show="{{showPopup}}" bind:close="onClosePopup" position="bottom" custom-style="height: 25%;" round>
+  <!-- 在这里添加Popup的内容 -->
+  <view>
+    <view>
+      <van-cell icon="shop-o" is-link bind:click="goToStudentQuestion">
+        <view class="cell-content">
+          <view class="title-section">
+            <view class="van-cell-text">学生自评互评</view>
+          </view>
+          <view class="tag-section">
+            <van-tag type="danger">点击填写</van-tag>
+          </view>
+        </view>
+      </van-cell>
+      <van-cell icon="shop-o" is-link bind:click="goToTeacherQuestion">
+        <view class="cell-content">
+          <view class="title-section">
+            <view class="van-cell-text">评教</view>
+          </view>
+          <view class="tag-section">
+            <van-tag type="danger">点击填写</van-tag>
+          </view>
+        </view>
+      </van-cell>
+      <van-cell icon="shop-o" is-link bind:click="goToCaseQuestion">
+        <view class="cell-content">
+          <view class="title-section">
+            <view class="van-cell-text">评案例</view>
+          </view>
+          <view class="tag-section">
+            <van-tag type="danger">点击填写</van-tag>
+          </view>
+        </view>
+      </van-cell>
+    </view>
+  </view>
+</van-popup>
+
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+  <van-tabbar-item icon="setting-o">设置</van-tabbar-item>
+</van-tabbar>

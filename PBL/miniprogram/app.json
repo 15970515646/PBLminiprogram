@@ -1,0 +1,51 @@
+{
+  "usingComponents": {
+    "van-rate": "@vant/weapp/rate",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-panel": "@vant/weapp/panel/index",
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+   "van-collapse": "@vant/weapp/collapse/index",
+   "van-collapse-item": "@vant/weapp/collapse-item/index",
+   "van-notice-bar": "@vant/weapp/notice-bar/index"
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/student/index/index",
+    "pages/student/questionnaire-student/questionnaire-student",
+    "pages/student/questionnaire-teacher/questionnaire-teacher",
+    "pages/student/questionnaire-case/questionnaire-case",
+    "pages/student/change-password/change-password",
+    "pages/student/personal-center/personal-center",
+    "pages/teacher/index/index",
+    "pages/teacher/change-password/change-password",
+    "pages/teacher/personal-center/personal-center",
+    "pages/teacher/random-group/random-group",
+    "pages/teacher/compute/compute",
+    "pages/teacher/current-case/current-case",
+    "pages/teacher-login/teacher-login",
+    "pages/student-login/student-login"
+
+  ],
+  "window": {
+    "backgroundColor": "#F00000",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "PBL评分系统",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

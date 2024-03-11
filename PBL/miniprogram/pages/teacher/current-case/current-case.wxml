@@ -1,0 +1,23 @@
+<van-notice-bar
+  color="#1989fa"
+  background="#ecf9ff"
+  left-icon="volume-o"
+  scrollable
+  text="在更换当前案例时请注意上一个案例是否计算完成"
+/>
+<block wx:for="{{cases}}" wx:key="index">
+  <van-panel title="{{item.title}}" desc="{{item.number}}"   wx:style="height: 400rpx;">
+  <view class="panel-content">
+    <!-- 内容区域 -->
+    <view class="content-section">
+      {{item.introduction}}
+    </view>
+
+    <!-- 按钮区域 -->
+    <view class="button-section">
+      <van-button type="primary" size="normal" bind:tap="setCurrentCase" data-index="{{index}}">点击选择</van-button>
+    </view>
+  </view>
+</van-panel>
+  <van-divider />
+</block>

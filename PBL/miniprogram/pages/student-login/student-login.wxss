@@ -1,0 +1,18 @@
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 让容器占满整个屏幕高度 */
+}
+
+.input-container {
+  width: 80%; /* 设置输入框容器宽度 */
+  margin-bottom: 20px;
+}
+
+.login-button {
+  width: 80%; /* 设置登录按钮宽度 */
+  text-align: center; /* 水平居中 */
+}

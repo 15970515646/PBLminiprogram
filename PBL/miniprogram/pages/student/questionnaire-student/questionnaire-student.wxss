@@ -1,0 +1,46 @@
+/* pages/questionnaire/questionnaire.wxss */
+
+.container {
+  padding: 20rpx;
+}
+
+.question {
+  margin-bottom: 20rpx;
+}
+
+.question-title {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.student-row {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.student-name {
+  flex: 1;
+  font-size: 14rpx;
+}
+
+.input {
+  flex: 2;
+  margin-left: 10rpx;
+  padding: 8rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 4rpx;
+  font-size: 14rpx;
+}
+
+/* Add more styles as needed */
+
+
+.submit-button {
+  background-color: #007aff;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
